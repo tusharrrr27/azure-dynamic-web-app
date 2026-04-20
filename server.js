@@ -49,6 +49,10 @@ app.get("/users", async (req, res) => {
   }
 });
 
+app.get("/test", (req, res) => {
+  res.send("OK");
+});
+
 app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
